@@ -1,0 +1,271 @@
+body {
+
+    overflow-y: scroll;
+    margin: 0px;
+    padding: 0px;
+    color: ghostwhite;
+    font-family: Consolas, 'Courier New', monospace;
+    background-image: url('../textures/real_cf.png');
+    background-repeat: repeat;
+
+}
+.header {
+    min-width: 400px;
+    width: 25%;
+    margin-left: 100px;
+   
+
+}
+img {
+    width: 100%;
+    left: 100px;
+    right: 100px;
+
+}
+
+.menupanel::-webkit-scrollbar {
+    background-color: darkred;
+    width: 3px;
+    border-radius: 10px;
+    size: 3px;
+    height: 3px;
+
+}
+
+.menupanel::-webkit-scrollbar-track {
+    border-radius: 10px;
+   
+    width: 3px;
+    
+
+}
+
+.menupanel::-webkit-scrollbar-thumb {
+    background-color: slategrey;
+    border-radius: 10px;
+    size: 3px;
+    width: 3px;
+    height: 3px;
+
+}
+
+
+body::-webkit-scrollbar {
+    background-color: darkred;
+    width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 3px;
+    height: 3px;
+    width: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: slategrey;
+    border-radius: 10px;
+}
+
+
+
+.header::-webkit-scrollbar {
+    height: 3px;
+    background-color: darkred;
+    margin: 10px;
+}
+
+.header::-webkit-scrollbar-track {
+    border-radius: 10px;
+    height: 3px;
+    margin: 10px;
+}
+
+.header::-webkit-scrollbar-thumb {
+    background-color: slategrey;
+    border-radius: 10px;
+    height: 3px;
+    margin: 10px;
+}
+
+.button {
+    height: 10px;
+    width: 10px;
+    border-color: darkred;
+    background-color: rgb(31, 31, 31);
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+    color: ghostwhite;
+    border-radius: 100%;
+}
+
+
+
+.menupanel {
+    position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+    z-index: 1;
+    padding: 30px;
+    color: ghostwhite;
+    border-top: solid;
+    border-color: darkred;
+    overflow-x: scroll;
+    white-space: nowrap;
+    min-width: 400px;
+}
+
+.main {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    min-width: 400px;
+    white-space: normal;
+    text-justify: auto;
+    padding: 30px;
+    border-bottom: solid;
+    border-top: solid;
+    border-color: darkred;
+    border-width: 3px;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+    
+}
+
+.footer {
+    padding-left: 15%;
+    padding-top: 30px;
+    position: relative;
+    padding-right: 15%;
+    overflow-x: hidden;
+    height: 50px;
+    text-align: right;
+}
+
+.lf {
+    float: left;
+
+}
+
+.rf {
+
+    right: 0px;
+
+}
+
+a:link {
+    color: lightblue;
+}
+
+/* visited link */
+a:visited {
+    color: lightblue;
+}
+
+/* mouse over link */
+a:hover {
+    color: lightblue;
+}
+
+/* selected link */
+a:active {
+    color: lightblue;
+}
+
+.row {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    border-bottom: 3px;
+    border-bottom: solid;
+    border-top: solid;
+    border-color: darkred;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+   
+ 
+}
+.rowe {
+    min-width: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    border: 3px;
+    border-bottom: solid;
+    border-top: solid;
+    border-color: darkred;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+   
+ 
+}
+
+
+
+.info {
+    left: 300px;
+}
+
+
+
+.grid>div {
+    font-size: 10px;
+
+}
+
+.item3 {
+    grid-area: 1 / 2 / 4 / 5;
+}
+
+.item1 {
+    max-width: 200px;
+    max-height: 200px;
+    
+}
+
+.item2 {
+    max-height: 50px;
+    padding-left: 10px;
+    text-align: center;
+   
+}
+@media only screen and (max-width: 768px) {
+    /* For desktop: */
+    .body{
+        overflow-x: hidden;
+    }
+    .row {
+        display: grid;
+        grid-column: 1;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        border-bottom: 3px;
+        border-bottom: solid;
+        border-top: solid;
+        border-color: darkred;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+
+       
+     
+    }
+    .item3 {
+        grid-area: 3 ;
+    }
+    .menu {
+        margin-left: 0px;
+       
+    }
+    .header {
+        margin-left: 0px;
+    }
+
+     
+  }
